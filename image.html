@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kseniia Budeichuk</title>
+
+    <!-- Підключення шрифтів з Google fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- END of Підключення шрифтів з Google fonts -->
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/hscroll.css">
+
+</head>
+
+<body class="loading">
+  <nav>
+    <div class="navbar container">
+      <div class="navigation">
+        <button class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbox">
+          <div class="navbox">
+            <h3>
+              <a class="nav-link js-scroll" href="index.html">
+                <img src="img/logo.svg" alt="Ksenia Budeychuk">
+              </a>
+            </h3>
+            <ul>
+              <li><a class="" href="index.html" data-scroll-to>HOME</a></li>
+              <li><a class="" href="mixed.html" data-scroll-to>MIXED MEDIA</a></li>
+              <li><a class="" href="about.html" data-scroll-to>ABOUT</a></li>
+              <li><a class="" href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <main data-scroll-section> -->
+  <main data-scroll-container>
+    <div id="s1" class="content">
+        <div class="gallery">
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_01.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_02.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_03.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_04.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_05.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_06.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_07.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_08.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_09.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__item-img">
+              <img src="img/img_10.jpg" >
+            </div>
+            <figcaption class="gallery__item-caption">
+            </figcaption>
+          </figure>
+      </div>
+    </div>
+  </main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/nav.js"></script>
+<!-- <script src="js/hscroll.js"></script> -->
+<script src="js/locomotive-scroll.min.js"></script>
+<script>
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        direction: 'horizontal'
+
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+
+
+
+header {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+}
+
+header .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+header a.button {
+    /*border:1px solid #000;
+    border-radius: 50%;*/
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    width: 40px;
+    height:40px;
+    transform: translateX(-80%);
+    margin-bottom: 30px;
+}
+
+a.button::before,
+a.button::after {
+    background-color: #000;
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 50%;
+    height: 4px;
+    /*margin-bottom: 8px;*/
+}
+
+a.button::after {
+    right:0;
+    left:auto;
+}
+
+a.button::before {
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+a.button::after {
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+
+.title {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10vh;
+}
+
+.title img {
+    display: block;
+    width: 100%;
+}
+
+.img-box img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    max-height: 70vh;
+    width: auto;
+}
+
+@media screen and (max-width:720px)  {
+
+    .title {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-aspect-ratio:1/1) and (max-width:720px)  {
+
+    .title {
+        width: 90%;
+        max-width: 500px;
+        margin-bottom: 15vh;
+    }
+
+    .img-box img {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+

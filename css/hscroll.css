@@ -1,0 +1,31 @@
+section {
+	display: block;
+}
+
+.gallery {
+	background-color: #000;
+	display: flex;
+	margin-left: 50px;
+}
+
+.gallery__item {
+	margin: 0;
+	margin-right: 2.5em; /* Відступи між фото */
+}
+
+.gallery__item:last-child {
+	margin-right: 0; /* Відступ після останнього фото */
+}
+
+.gallery__item-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery__item-img img {
+	display:block;
+	width: auto;
+	height:100vh;
+}
